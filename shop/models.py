@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Seed(models.Model):
     ''' Seed model '''
 
