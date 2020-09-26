@@ -13,7 +13,6 @@ class Seed(models.Model):
     class Meta:
     	verbose_name = 'Seed'
     	verbose_name_plural = 'Seeds'
-    	ordering = ['-published']
 
 
 class Rubric(models.Model):

@@ -1,6 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from shop.views import view_main_page
+from shop.views import (
+    view_main_page,
+    show_seeds_by_current_rubric,
+)
 
 
 urlpatterns = [
