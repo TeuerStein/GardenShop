@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from .services.shop_services import take_objects_from_model_by_current_rubric
+from .services.shop_services import (
+    take_objects_from_model_by_current_rubric,
+    rubrics_for_shop_page,
+)
 
 
 def view_main_page(request):
@@ -7,7 +10,7 @@ def view_main_page(request):
 
     context = rubrics_for_shop_page(request)
 
-    return render(request, 'index.html', {})
+    return render(request, 'index.html', context)
 
 def show_seeds_by_current_rubric(request, rubric_id):
     ''' Show objects from the Seed model

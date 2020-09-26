@@ -2,7 +2,11 @@ from shop.models import Seed, Rubric
 
 
 def rubrics_for_shop_page(request):
-    pass
+    rubrics = Rubric.objects.all()
+
+    context = {'rubrics': rubrics}
+
+    return context
 
 def take_objects_from_model_by_current_rubric(request, rubric_id):
     ''' Take objects from the Seed model
