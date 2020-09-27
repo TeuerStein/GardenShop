@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  max-width: 100%;
+  height: 1020px;
+
+  background-image: url(/Shop/src/img/3030909\ 2.png);
+}
+
+.grid-conteiner {
+  padding: 10px 40px;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+
+.nav-bar {
+  display: grid;
+  justify-content: space-between;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item > a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0 50px;
+  font-size: 45px;
+}
+
+.grid-item > a:hover {
+  border: 1px solid white;
+  border-radius: 1px;
+  transition: 0.5s;
+}
+
+.grid-search-box-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-search-box-item {
+  text-align: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.search-btn {
+  height: 35px;
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.logo-end {
+  max-width: 100%;
+  margin: 0 50px;
+}
+
+.shop {
+  display: block;
+  margin: 10% 45%;
+  font-size: 45px;
+  color: white;
+}
+
+.content-block {
+  width: 100%;
+  height: 1020px;
+}
+
+.content-block-product {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.image-product {
+  text-align: center;
+  padding: 50% 20px 0;
+}
+
+.name-product-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.name-product {
+  text-align: center;
+  color: white;
+}
+
+.radish,
+.cabbage,
+.onion {
+  width: 50%;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.content-block {
+  max-width: 100%;
+  height: 1020px;
+}
+
+.content-block-info {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.info-block {
+  text-align: center;
+  padding: 2%;
+}
+
+.viev,
+.faq,
+.info-image {
+  width: 50%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  font-size: 45px;
+}
+
+.info-image {
+  height: 600px;
+  border-radius: 80px;
+}
