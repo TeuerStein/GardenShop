@@ -1,3 +1,6 @@
+from .services.user_services import (
+    main_login_function,
+)
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
@@ -30,3 +33,17 @@ def user_logout(request):
     logout(request)
 
     return HttpResponseRedirect('/')
+
+
+def registration(request):
+    """ Registration controller """
+
+    if request.user.is_authenticated:
+        return special(request)
+
+    else:
+        registered = False
+
+        context = func(request, registered)
+
+        return render(request, "registration.html", context)
